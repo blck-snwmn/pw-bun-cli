@@ -6,6 +6,10 @@ out
 dist
 *.tgz
 
+# build artifacts
+pw-bun-cli*
+screenshot.png
+
 # code coverage
 coverage
 *.lcov

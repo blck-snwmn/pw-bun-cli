@@ -3,6 +3,11 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "build": "bun run build:playwright && bun run build:puppeteer",
+    "build:playwright": "bun build --compile --target=bun-darwin-arm64 --external playwright index.ts --outfile pw-bun-cli-playwright",
+    "build:puppeteer": "bun build --compile --target=bun-darwin-arm64 index-puppeteer.ts --outfile pw-bun-cli-puppeteer"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -10,6 +15,7 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "playwright": "^1.56.1"
+    "playwright": "^1.56.1",
+    "puppeteer": "^24.29.1"
   }
 }
