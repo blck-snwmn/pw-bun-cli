@@ -1,11 +1,11 @@
 {
   "name": "pw-bun-cli",
-  "module": "index.ts",
+  "module": "index-playwright.ts",
   "type": "module",
   "private": true,
   "scripts": {
     "build": "bun run build:playwright && bun run build:puppeteer",
-    "build:playwright": "bun build --compile --target=bun-darwin-arm64 --external playwright index.ts --outfile pw-bun-cli-playwright",
+    "build:playwright": "bun build --compile --target=bun-darwin-arm64 --external playwright index-playwright.ts --outfile pw-bun-cli-playwright",
     "build:puppeteer": "bun build --compile --target=bun-darwin-arm64 index-puppeteer.ts --outfile pw-bun-cli-puppeteer"
   },
   "devDependencies": {

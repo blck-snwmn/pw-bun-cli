@@ -25,7 +25,7 @@ bunx playwright install
 
 **Playwright version:**
 ```bash
-bun index.ts <URL>
+bun index-playwright.ts <URL>
 ```
 
 **Puppeteer version:**
@@ -35,7 +35,7 @@ bun index-puppeteer.ts <URL>
 
 Example:
 ```bash
-bun index.ts https://example.com
+bun index-playwright.ts https://example.com
 ```
 
 ### Building standalone binaries
